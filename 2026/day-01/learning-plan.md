@@ -18,4 +18,4 @@ I aim to become a top DevOps and Cloud professional, mastering automation and sc
 
 #### How you will stay consistent every single day?
 
-Consistency is my commitment to daily progress. No matter small it is. 
+Consistency is my commitment to daily progress. No matter how small it is. 
