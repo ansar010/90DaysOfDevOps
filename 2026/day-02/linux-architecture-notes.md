@@ -63,3 +63,23 @@ Kernel = the manager who actually makes it happen.
 
 **In one line**:  
 A system call is the way user programs ask the kernel to perform privileged tasks like creating processes, reading files, or talking to hardware.
+
+<img width="250" height="300" alt="linux_boot_flow" src="https://github.com/user-attachments/assets/eba1549d-0d83-4218-ad61-475b9d8d64f3" /> 
+Power On → hardware gets electricity.
+BIOS/UEFI → initializes hardware and checks devices.
+Boot Loader (GRUB) → loads the Linux kernel into memory.
+Kernel → starts managing hardware and launches systemd (PID 1).
+Systemd → starts essential services and prepares the system.
+Finally, you reach User Login and User Space Ready, where applications can run.
+In short:Power → BIOS → Bootloader → Kernel → Systemd → User Login                                   
+<br><br>
+<img width="250" height="300" alt="Linux_Architecture" src="https://github.com/user-attachments/assets/5d1f597c-64cf-41f3-9872-a35479ea07ec" />
+User Space at the top (applications, shells, user programs)
+Kernel in the middle (CPU, memory, devices, system services)
+Systemd (PID 1) below (service management, dependencies, startup/shutdown)
+And at the very bottom, the Boot Loader & BIOS/UEFI that kick things off.
+This layered view makes it easier to remember:
+User Space = where you work
+Kernel = the core manager
+Systemd = the organizer that starts and controls services
+
