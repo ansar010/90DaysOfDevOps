@@ -83,3 +83,26 @@ User Space = where you work
 Kernel = the core manager
 Systemd = the organizer that starts and controls services
 
+
+## Explain process states (running, sleeping, zombie, etc.)
+## List 5 commands you would use daily
+
+**Process States in Linux**
+R (Running): Using CPU or ready to run.
+S (Sleeping): Waiting for input; can wake up.
+D (Uninterruptible sleep): Waiting for hardware; cannot be interrupted.
+Z (Zombie): Finished but parent hasn’t collected status.
+T (Stopped): Suspended by user signal.
+**Check states with ps, top, or htop.**
+
+**5 Daily Commands**
+cd → change directory
+ls → list files
+cp → copy files
+mv → move/rename files
+rm → remove files
+(bonus: mkdir → create directories)
+
+**In simple terms**
+Processes in Linux can be running, waiting, stuck, suspended, or dead-but-not-cleaned-up.
+And the daily commands are just your basic navigation (cd, ls) and file handling (cp, mv, rm, mkdir).
